@@ -1,0 +1,13 @@
+numpy
+opencv-python
+requests
+numpy
+tensorflow
+pydantic
+fastapi
+uvicorn
+jinja2
+flask
+imutils
+pyshine
+statistics

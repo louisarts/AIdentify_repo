@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Aidentify, treats predictor </title>
+  </head>
+  <body class="d-flex h-100 text-center text-bg-dark">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="mb-auto">
+        <div>
+          <div class="container-fluid">
+            <h1>Aidentify, treats predictor</h1>
+            <br>
+            <div style="display: flex;justify-content: center;">
+              <img src="{{url_for('video_feed')}}" class="img-fluid border rounded-3 shadow-lg mb-4" loading="lazy" width="640px" ></div>
+
+              <input type="button" value="Go Back!" onclick="history.back()">
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
+
+</html>
