@@ -1,19 +1,12 @@
 import cv2
 from query_to_api import make_query
-from process_emotions import process_emotions, initialize_data_frame
-from process_emotions import  save_data_frame,corrector,apply_corrector
 
-
-#Cascade classifier
 faceCascade = cv2.CascadeClassifier('cascade.xml')
 
 video_capture = cv2.VideoCapture(0)
 i = 0
-result = "Happiness"
-file = "data1.csv"
-model= "model1"
-initialize_data_frame(file,model)
-while True:
+result = []
+while i<1000:
     # Capture frame-by-frame
     ret, frame = video_capture.read()
 
@@ -31,9 +24,8 @@ while True:
     for (x, y, w, h) in faces:
         # Query the emotion of the face with the query_to_api function
         #if (i % 15 == 0):
-        result = make_query(frame[y:y + h, x:x + w],model)
-        save_data_frame(process_emotions(result,i),file)
-        label = result.json()["Emotion"]
+        result.append(make_query(frame[y:y + h, x:x + w]))#.replace('"',"")
+
         # Draw a rectangle over each of the faces that appear on the frame each
         #with it's emotion
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 0, 0), 3)
@@ -42,7 +34,7 @@ while True:
         rect_heigh = int(35 * fontScale)
         cv2.rectangle(frame, (x, y), (x+w, y-rect_heigh), (0, 0, 0), -1)
 
-        cv2.putText(frame, text=label, org=(x+10,y-10),
+        cv2.putText(frame, text="result", org=(x+10,y-10),
             fontFace= cv2.FONT_HERSHEY_SIMPLEX, fontScale=fontScale, color=(255,255,255),
             thickness=2, lineType=cv2.LINE_AA)
     i += 1

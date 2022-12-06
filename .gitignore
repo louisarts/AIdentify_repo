@@ -1,6 +1,10 @@
 .DS_Store
-/module2
 /DenseNet169_75x75
 /DenseNet169_125x125
+/DenseNet169_48x48
 /New_developments
 .env
+
+model2/
+
+data1.csv

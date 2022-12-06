@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+aidentify.egg-info/PKG-INFO
+aidentify.egg-info/SOURCES.txt
+aidentify.egg-info/dependency_links.txt
+aidentify.egg-info/not-zip-safe
+aidentify.egg-info/requires.txt
+aidentify.egg-info/top_level.txt

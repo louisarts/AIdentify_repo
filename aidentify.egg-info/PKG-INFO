@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: aidentify
+Version: 0.0.0
+Summary: AIdentify model
+Home-page: localhost:8000
+Author: Alba Gutierrez
+Author-email: albaguti@gmail.com
+License: MIT
+License-File: LICENSE
