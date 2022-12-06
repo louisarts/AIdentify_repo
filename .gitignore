@@ -8,3 +8,11 @@
 model2/
 
 data1.csv
+
+model_0.7107.h5
+
+output/
+
+__pycache__/
+
+aidentify.egg-info/

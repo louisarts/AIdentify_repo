@@ -14,6 +14,7 @@ def pyshine_process(model):
     cnt=0
     label = "Happiness"
     i = 0
+    labels = []
     while(cap.isOpened()):
         ret, img = cap.read()
         if ret == True:
@@ -24,6 +25,9 @@ def pyshine_process(model):
             i, img, label1 = process_frames(i,img, label, model)
             if label1 != label:
                 label = label1
+            if label1 not in labels:
+                cv2.imwrite(f'output/{label}.png',img)
+                labels.append(label1)
             frame = cv2.imencode('.JPEG', img,[cv2.IMWRITE_JPEG_QUALITY,95])[1].tobytes()
             #time.sleep(0.016)
             yield (b'--frame\r\n'b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
