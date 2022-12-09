@@ -6,12 +6,7 @@ def process_emotions(result, index):
 
 
 def initialize_data_frame(file,model):
-    if model == "model1":
-        class_labels  = ['Anger', 'Disgust', 'Fear', 'Happiness', 'Neutral', 'Sadness', "Surprise","Emotion"]
-    elif model == "model2":
-        class_labels = ['Anger', 'Contempt', 'Disgust', 'Fear', 'Happiness', 'Neutral', 'Sadness', 'Surprise',"Emotion"]
-    elif model == "model3":
-        class_labels = ['Anger', 'Contempt', 'Disgust', 'Fear', 'Happiness', 'Neutral', 'Sadness', 'Surprise',"Emotion"]
+    class_labels = ['Anger', 'Contempt', 'Disgust', 'Fear', 'Happiness', 'Neutral', 'Sadness', 'Surprise',"Emotion"]
 
     df = pd.DataFrame(columns = class_labels)
     df.to_csv(file, index=False)

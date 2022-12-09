@@ -14,14 +14,12 @@ import cv2 as cv
 
 def make_query(image, model):
     if model == "model1":
-        dsize = (48, 48)
-        class_labels  = ['Anger', 'Disgust', 'Fear', 'Happiness', 'Neutral', 'Sadness', "Surprise"]
+        dsize = (80, 80)
     elif model == "model2":
         dsize = (75,75)
-        class_labels = ['Anger', 'Contempt', 'Disgust', 'Fear', 'Happiness', 'Neutral', 'Sadness', 'Surprise']
     elif model == "model3":
         dsize = (48,48)
-        class_labels = ['Anger', 'Contempt', 'Disgust', 'Fear', 'Happiness', 'Neutral', 'Sadness', 'Surprise']
+    class_labels = ['Anger', 'Contempt', 'Disgust', 'Fear', 'Happiness', 'Neutral', 'Sadness', 'Surprise']
     #reescale the image
     reduced_image = cv.resize(image,dsize)
     url= "http://localhost:8000/predict_"+model

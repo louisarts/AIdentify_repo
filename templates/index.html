@@ -7,32 +7,39 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <title>Aidentify  </title>
-    <link rel="icon" type="image/x-icon" href="img/favicon_2.ico">
+    <title>Welcome | AIdentify</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
   </head>
   <body class="d-flex h-100 text-center text-bg-dark">
 
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
       <div class="row align-items-center">
-          <img class="d-block order-lg-2 me-lg-n5 flex-shrink-0" src="static/img/main_logo_v1.png">
+
+        <div class="imgbox">
+          <img class="center-fit" src="static/img/aidentify_logo.png" width="650" class="logo" alt="AIdentify logo">
       </div>
       <div class="row justify-content-center">
         <div class="col-6">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.
+          <p style="font-size: 1.6vw">
+            <em>Harnessing machine learning for human trait recognition </em>
           </p>
         </div>
-      <nav class="navbar justify-content-center">
-
-        <a href="{{url_for('features1')}}" class='btn btn-primary'>Welcome</a>
-      </nav>
+      </div>
     </div>
+        <nav class="navbar justify-content-center">
+
+          <a href="{{url_for('features1')}}" class='btn btn-info btn-lg' style="background-color: #11c7c3d9 !important;">Welcome</a>
+        </nav>
+
+
+
+
+
 
 
       <!--form action = "/res" method = "POST">
           </form-->
-    </div>
+
   </body>
 </html>
 

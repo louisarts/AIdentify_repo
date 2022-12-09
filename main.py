@@ -14,6 +14,7 @@ def pyshine_process(model):
     cnt=0
     label = "Happiness"
     i = 0
+    labels = []
     while(cap.isOpened()):
         ret, img = cap.read()
         if ret == True:
@@ -24,11 +25,16 @@ def pyshine_process(model):
             i, img, label1 = process_frames(i,img, label, model)
             if label1 != label:
                 label = label1
+            if label1 not in labels:
+                cv2.imwrite(f'output/{label}.png',img)
+                labels.append(label1)
             frame = cv2.imencode('.JPEG', img,[cv2.IMWRITE_JPEG_QUALITY,95])[1].tobytes()
             #time.sleep(0.016)
+
             yield (b'--frame\r\n'b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n')
         else:
             break
+
 
 
 @app.route('/')
@@ -37,15 +43,31 @@ def index():
 
 @app.route('/features1')
 def features1():
-    return render_template("/features.html")
+    return render_template("/overview.html")
 
 @app.route('/features2')
 def features2():
-    return render_template("/features2.html")
+    return render_template("/data1.html")
 
 @app.route('/features3')
 def features3():
-    return render_template("/features3.html")
+    return render_template("/data2.html")
+
+@app.route('/visualize')
+def visualize():
+    return render_template("/visualize.html")
+
+@app.route('/cnn')
+def cnn():
+    return render_template("/cnn.html")
+
+@app.route('/modelselection')
+def modelselection():
+    return render_template("/modelselection.html")
+
+@app.route('/team')
+def team():
+    return render_template("/team.html")
 
 @app.route('/mod1')
 def mod1():
@@ -78,11 +100,21 @@ def model3():
 def about():
     return render_template("/about.html")
 
+@app.route('/furtherinfo')
+def furtherinfo():
+    return render_template("/furtherinfo.html")
+
 @app.route('/kill_camera')
 def kill_camera():
     global cap
     cap.release()
-    return render_template("/features3.html")
+    return render_template("/modelselection.html")
+
+@app.route('/kill_camera2')
+def kill_camera2():
+    global cap
+    cap.release()
+    return render_template("/show_result.html")
 
 if __name__ == "__main__":
     app.run(debug=True,threaded=True)
