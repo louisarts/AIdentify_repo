@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel, Field
 import numpy as np
 from tensorflow import keras
-from skimage import color
+import cv2
 
 my_app = FastAPI()
 print("Loading model 1...")
@@ -24,15 +24,21 @@ def predict(info : Info):
     labels = info.labels
     #preprocess the image might need to be changed depending on the final model
     #we need first to convert the list into a np.array
-    gray = color.rgb2gray(np.array(info.image))
+    #print("THIS IS MY IMAGE!!!!",np.array(info.image)[0:10], np.array(info.image).shape)
+    gray = cv2.cvtColor(np.float32(info.image), cv2.COLOR_BGR2GRAY)
+    #print("THIS IS MY IMAGE!!!!",gray[0:10],gray.shape)
+    cv2.imwrite('image.png', gray)
 
-    frame_prepros = preprocess_fun(gray)
+    #frame_prepros = preprocess_fun(gray)
     #normalize the values of the image
-    frame_rescaled=frame_prepros/255
+    #
+    frame_rescaled=(gray/255)
     #add nex axis
     fr = frame_rescaled[np.newaxis]
     #predict the emotion
+
     predict = model1.predict(fr).tolist()
+
     v_m = max(predict[0])
     maxp = predict[0].index(v_m)
     #Convert the predict list into a dictionary
@@ -86,7 +92,7 @@ def predict(info : Info):
     #add nex axis
     fr = frame_rescaled[np.newaxis]
     #predict the emotion
-    predict = model2.predict(fr).tolist()
+    predict = model3.predict(fr).tolist()
     v_m = max(predict[0])
     maxp = predict[0].index(v_m)
     print(len(predict))

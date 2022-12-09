@@ -9,7 +9,7 @@ from process_emotions import  save_data_frame,corrector,apply_corrector
 
 def process_frames(i,frame,label,model):
     #Initialize the data frame
-    file = "data1.csv"
+    file = "output/data1.csv"
     if i == 0:
         initialize_data_frame(file,model)
     faceCascade = cv2.CascadeClassifier('cascade.xml')
