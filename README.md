@@ -17,9 +17,21 @@ AIdentify is a data science project, built in less than 2 weeks, which, given a 
 ## Technologies
 We have developed an app written in Python, served as a Flask application. 
 
-* Lorem version: 12.3
-* Ipsum version: 2.33
-* Ament library version: 999
+* numpy 1.23.5
+* opencv-python 4.6.0.66
+* requests 2.28.1
+* tensorflow 2.11.0
+* pydantic 1.10.2
+* fastapi 0.88.0
+* uvicorn 0.20.0
+* jinja2 3.1.2
+* flask 2.2.2
+* imutils 0.5.4
+* pyshine 0.0.9
+* statistics 1.0.3.5
+* scikit-image 0.19.3
+* gunicorn 20.1.0
+
 
 ---
 
