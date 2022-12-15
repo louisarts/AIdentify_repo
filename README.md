@@ -1,6 +1,6 @@
-<div align="center">
+<!--div align="center">
     <h1>AIdentify</h1>
-</div>
+</div-->
 
 --- 
 
@@ -13,6 +13,8 @@ We have developed an app written in Python, served as a Flask application.
 <div align="center">
     <h2> Table of Contents </h2>
 </div>
+
+
 ## Table of contents
 * [General info](#general-info)
 * [Technologies](#technologies)
