@@ -24,7 +24,7 @@ The FER+ (Face Expression Recognition Plus) dataset is an extension/correction o
 
 The AffectNet-HQ dataset is an annotated database of facial expressions “in the wild” (which are essentially candid photos which are not staged just for the benefit of the dataset). The database was created by collecting facial images from the internet by querying three major search engines using a large number of emotion related keywords in six different languages. The version of the database available on Kaggle has been cleaned to relabel the emotional classes of certain images and utilizes an image enhancement technique to improve image quality. In total the dataset contains about 31,000 images of varying pixel sizes.
 
-<img src=""
+<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/page_imgs/fer_emotions.png" height="300px">
 
 ---
 
