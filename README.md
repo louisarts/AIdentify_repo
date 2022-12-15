@@ -65,7 +65,7 @@ The first model consisted on an entire Convolutional Neural Network (CNN) archit
 On a second approach, we have used a pre-trained a Convolutional Neural Network (Densenet169), where we have added a few extra layers. We have trained the model in two sequences. On the first step, we have frozen the pre-trained network layers and just trained the layers that we have added. On a second step, after the model has converged, we have finetuned the fitting by unfrozing a few layers from the pre-trained CNN.
 Following this approach we have achieved a model that is able to predict the emotions with a 81% of accuracy. 
 
-<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/page_imgs/transfer_learning.png" height="400px">
+<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/page_imgs/transfer_learning.png" height="200px">
 
  
 
