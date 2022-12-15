@@ -4,9 +4,9 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Getting the data](#getting-data)
-* [Preparing the Data](#preparing-data)
-* [Training the Model](#training-model)
+* [Getting the data]
+* [Preparing the Data]
+* [Training the Model]
 * [Technologies](#technologies)
 * [Setup](#setup)
 
