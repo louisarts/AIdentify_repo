@@ -1,6 +1,3 @@
-<!--div align="center">
-    <h1>AIdentify</h1>
-</div-->
 # AIdentify
 
 --- 
@@ -10,11 +7,6 @@ AIdentify is a data science project, built in less than 2 weeks, which, given a 
 We have developed an app written in Python, served as a Flask application. 
 
 ---
-
-<div align="center">
-    <h2> Table of Contents </h2>
-</div>
-
 
 ## Table of contents
 * [General info](#general-info)
