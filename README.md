@@ -1,3 +1,7 @@
+#AIdentify
+
+AIdentify is a data science project, built in less than 2 weeks, which, given a live video input, identifies faces and classifies the emotions being expressed . The project intends to demonstrate numerous facets of data science, from data preparation to model selection and training. There are numerous potential applications of our project, including measuring reactions to digital advertisements, improving eLearning, and getting feedback on digital entertainment experiences.
+
 
 +-+-+-+-+-+-+-+-+-+-+-
 Run pip install -e . to install
