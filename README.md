@@ -5,6 +5,7 @@
 ## Table of contents
 * [General info](#general-info)
 * [Getting the data](#getting-data)
+* [Preparing the Data](#preparing-data)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
@@ -24,9 +25,33 @@ The FER+ (Face Expression Recognition Plus) dataset is an extension/correction o
 
 The AffectNet-HQ dataset is an annotated database of facial expressions “in the wild” (which are essentially candid photos which are not staged just for the benefit of the dataset). The database was created by collecting facial images from the internet by querying three major search engines using a large number of emotion related keywords in six different languages. The version of the database available on Kaggle has been cleaned to relabel the emotional classes of certain images and utilizes an image enhancement technique to improve image quality. In total the dataset contains about 31,000 images of varying pixel sizes.
 
-<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/page_imgs/fer_emotions.png" height="300px">
+<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/page_imgs/fer_emotions.png" height="200px">
 
 ---
+
+## Preparing the Data
+
+1. Data Cleaning
+
+The first step in preparing our data was to clean it. Cleaning data is an important part of any data preparation process – it usually involves correcting or removing incorrect, wrongly formatted, duplicated or incomplete data within a dataset.
+
+In our case data cleaning involved dropping clearly mistaken images (i.e., those not showing faces), and dropping images where the labels did not seem appropriate (e.g., a face showing surprise but labelled as “sad”).
+
+2. Resizing & Haar Cascade filtering
+
+The next step in our data preparation process involved using the Haar cascade filter to detect and then essentially crop out the face from the images (i.e., getting rid of the background). Then we resized the images so that they had a uniform standard size (i.e., 200x200 pixels).
+
+3. Grayscaling/Normalizing
+
+Next, we made sure to change all images from color (RGB) to grayscale (one color channel). We also normalized the pixel intensity by dividing each pixel by 255 (each color has 255 parameter values based on color intensity).
+
+4. Augmentation (mirrroing & rotating)
+
+Since the dataset was slightly imbalanced in favor of happy, neutral, and surprised emotions, we wanted to boost the size of other emotion classes (e.g., fear, disgust, contempt). We did this by augmenting the already existing data by mirroring and rotating the underrepresented emotion class images. This allowed us to have a more balanced dataset for training the models.
+
+<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/page_imgs/data_prep.png" height="500px">
+
+
 
 ## Technologies
 We have developed an app written in Python (version: 3.10.6), served as a Flask application. 
