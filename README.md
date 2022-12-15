@@ -1,11 +1,5 @@
 # AIdentify
 
---- 
-
-AIdentify is a data science project, built in less than 2 weeks, which, given a live video input, identifies faces and classifies the emotions being expressed . The project intends to demonstrate numerous facets of data science, from data preparation to model selection and training. There are numerous potential applications of our project, including measuring reactions to digital advertisements, improving eLearning, and getting feedback on digital entertainment experiences.
-
-We have developed an app written in Python, served as a Flask application. 
-
 ---
 
 ## Table of contents
@@ -13,17 +7,36 @@ We have developed an app written in Python, served as a Flask application.
 * [Technologies](#technologies)
 * [Setup](#setup)
 
+---
 
+## General info
+AIdentify is a data science project, built in less than 2 weeks, which, given a live video input, identifies faces and classifies the emotions being expressed . The project intends to demonstrate numerous facets of data science, from data preparation to model selection and training. There are numerous potential applications of our project, including measuring reactions to digital advertisements, improving eLearning, and getting feedback on digital entertainment experiences.
 
+---
 
-+-+-+-+-+-+-+-+-+-+-+-
-Run pip install -e . to install
-+-+-+-+-+-+-+-+-+-+-+-
+## Technologies
+We have developed an app written in Python, served as a Flask application. 
+
+* Lorem version: 12.3
+* Ipsum version: 2.33
+* Ament library version: 999
+
+---
+
+## Setup
+
+To install this project, first:
+
+1) Run pip install -e . to install
+
 To run the code:
-On folder api run: uvicorn api_multiple_models:my_app
+
+2) On folder api run: uvicorn api_multiple_models:my_app
+
 When the model is loaded:
-1) If we want to show locally:
+
+3.a) If we want to show locally:
     python video_capture_with_prediction.py
-2) If we want to show on the browser:
+3.b) If we want to show on the browser:
     python main.py
    Open browser on localhost:5000
