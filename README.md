@@ -4,7 +4,7 @@
 
 ## Table of contents
 * [General info](#general-info)
-* [Getting the data]
+* [Getting the data](#getting-the-data)
 * [Preparing the Data]
 * [Training the Model]
 * [Technologies](#technologies)
