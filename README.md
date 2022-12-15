@@ -6,6 +6,7 @@
 * [General info](#general-info)
 * [Getting the data](#getting-data)
 * [Preparing the Data](#preparing-data)
+* [Training the Model](#training-model)
 * [Technologies](#technologies)
 * [Setup](#setup)
 
@@ -51,10 +52,24 @@ Since the dataset was slightly imbalanced in favor of happy, neutral, and surpri
 
 <img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/page_imgs/data_prep.png" height="500px">
 
+## Training the Models
+
+We have trained two different models.
+
+### Custom Convolutional Neural Network
+The first model consisted on an entire Convolutional Neural Network (CNN) architecture designed by AIdentify developers. With this model we were able to predict the emotions with a 71% Accuracy.
+
+<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/page_imgs/cnn.png" height="500px">
+
+### Model constructed using a pre-trained network
+On a second approach, we have used a pre-trained a Convolutional Neural Network (Densenet169), where we have added a few extra layers. We have trained the model in two sequences. On the first step, we have frozen the pre-trained network layers and just trained the layers that we have added. On a second step, after the model has converged, we have finetuned the fitting by unfrozing a few layers from the pre-trained CNN.
+Following this approach we have achieved a model that is able to predict the emotions with a 81% of accuracy. 
+
+ 
 
 
 ## Technologies
-We have developed an app written in Python (version: 3.10.6), served as a Flask application. 
+We have developed our app in Python (version: 3.10.6), served as a Flask application. 
 We have used the following libraries:
 
 * numpy 1.23.5
