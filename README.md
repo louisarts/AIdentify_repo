@@ -5,9 +5,10 @@
 ## Table of contents
 * [General info](#general-info)
 * [Getting the data](#getting-the-data)
-* [Preparing the Data]
-* [Training the Model]
+* [Preparing the Data](#preparing-the-data)
+* [Training the Model](#training-the-model)
 * [Technologies](#technologies)
+* [Architecture](#architecture)
 * [Setup](#setup)
 
 ---
@@ -67,9 +68,6 @@ Following this approach we have achieved a model that is able to predict the emo
 
 <img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/page_imgs/transfer_learning.png" height="200px">
 
- 
-
-
 ## Technologies
 We have developed our app in Python (version: 3.10.6), served as a Flask application. 
 We have used the following libraries:
@@ -89,6 +87,14 @@ We have used the following libraries:
 * scikit-image 0.19.3
 * gunicorn 20.1.0
 
+---
+
+## Architecture
+
+Our app is deployed as a web page served using Flask. We have used Bootstrap for the layout of our webpage.In 
+
+It uses opencv to control the computer's webcam. On each of the frames that opencv is processing, we use a HaarCascade classifier to detect all the faces. Then, the face pixels are send via post query to the chosen model, that is served through a FastAPI service. The model returns the prediction as a list of probabilities. The emotion with a higher probability is then outputed on each of the frames as a label. Flak is used to outut the processed frames with the detected faces with the emotion labels as a video stream. 
+
 
 ---
 
@@ -105,7 +111,10 @@ To run the code:
 When the model is loaded:
 
 3.a) If we want to show locally:
-    python video_capture_with_prediction.py
+<br>
+    <ul>python video_capture_with_prediction.py</ul>
+<br>
 3.b) If we want to show on the browser:
-    python main.py
+<br>
+<ul>    python main.py</ul>
    Open browser on localhost:5000
