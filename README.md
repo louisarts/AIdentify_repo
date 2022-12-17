@@ -97,28 +97,13 @@ We have used the following libraries:
 ## Architecture
 
 Our app is deployed as a web page served using Flask. We have used Bootstrap for the layout of the webpage.
-<style> .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
 
-/* Create two equal columns that sits next to each other */
-.column {
-  flex: 50%;
-  padding: 0 4px;"
-}
-
-.column img {
-  margin-top: 8px;
-  vertical-align: middle;
-}</style>
-<div class="row">
-  <div class="column">
-    <img src="wedding.jpg">
-    <img src="rocks.jpg">
-    <img src="falls2.jpg">
-    <img src="paris.jpg">
+<div style="display: flex;flex-wrap: wrap;padding: 0 4px;">
+  <div style="flex: 50%; padding: 0 4px;">
+    <img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/index.jpg" style="margin-top: 8px; vertical-align: middle;">
+    <img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/project.jpg" style="margin-top: 8px; vertical-align: middle;">
+    <img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/model_select.jpg" style="margin-top: 8px; vertical-align: middle;">
+     <img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/key_learnings.jpg" style="margin-top: 8px; vertical-align: middle;">
   </div>
 </div>
 
