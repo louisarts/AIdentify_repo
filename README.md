@@ -110,6 +110,10 @@ Our app is deployed as a web page served using Flask. We have used Bootstrap for
 We use opencv to control the computer's webcam. We use a HaarCascade classifier to detect all the faces on each of the frames opencv is processing. Then, the face pixels are send via post query to the an FastAPI service for the chosen model. The API returns the prediction of the model as a list of probabilities. The emotion with a higher probability is then outputed on each of the frames as a label. Flask is used to outut the processed frames with the detected faces with the emotion labels as a video stream.
 <img width="80%" src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/video_output" style="margin-top: 8px; vertical-align: middle;">
 
+
+
+
+
 ---
 
 ## Setup
