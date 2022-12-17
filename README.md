@@ -97,7 +97,7 @@ We have used the following libraries:
 ## Architecture
 
 Our app is deployed as a web page served using Flask. We have used Bootstrap for the layout of the webpage.
-<style=" .row {
+<style> .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
@@ -112,7 +112,7 @@ Our app is deployed as a web page served using Flask. We have used Bootstrap for
 .column img {
   margin-top: 8px;
   vertical-align: middle;
-}></style>
+}</style>
 <div class="row">
   <div class="column">
     <img src="wedding.jpg">
