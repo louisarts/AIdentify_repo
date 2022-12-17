@@ -98,12 +98,12 @@ We have used the following libraries:
 
 Our app is deployed as a web page served using Flask. We have used Bootstrap for the layout of the webpage.
 
-<div style="display: flex;flex-wrap: wrap;padding: 0 4px;">
-  <div style="flex: 50%; padding: 0 4px;">
-    <img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/index.png" style="margin-top: 8px; vertical-align: middle;">
-    <img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/project.png" style="margin-top: 8px; vertical-align: middle;">
-    <img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/model_select.png" style="margin-top: 8px; vertical-align: middle;">
-    <img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/key_learnings.png" style="margin-top: 8px; vertical-align: middle;">
+<div>
+  <div>
+    <img width="49%" src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/index.png" style="margin-top: 8px; vertical-align: middle;">
+    <img width="49%" src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/project.png" style="margin-top: 8px; vertical-align: middle;">
+    <img width="49%" src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/model_select.png" style="margin-top: 8px; vertical-align: middle;">
+    <img width="49%" src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/key_learnings.png" style="margin-top: 8px; vertical-align: middle;">
   </div>
 </div>
 
