@@ -97,6 +97,30 @@ We have used the following libraries:
 ## Architecture
 
 Our app is deployed as a web page served using Flask. We have used Bootstrap for the layout of the webpage.
+<style=" .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;"
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}></style>
+<div class="row">
+  <div class="column">
+    <img src="wedding.jpg">
+    <img src="rocks.jpg">
+    <img src="falls2.jpg">
+    <img src="paris.jpg">
+  </div>
+</div>
 
 We use opencv to control the computer's webcam. We use a HaarCascade classifier to detect all the faces on each of the frames opencv is processing. Then, the face pixels are send via post query to the an FastAPI service for the chosen model. The API returns the prediction of the model as a list of probabilities. The emotion with a higher probability is then outputed on each of the frames as a label. Flask is used to outut the processed frames with the detected faces with the emotion labels as a video stream.
 
