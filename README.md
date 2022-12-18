@@ -137,17 +137,22 @@ When the model is loaded:
 <br>
 <ul>    python main.py</ul>
    Open browser on localhost:5000
-   
+
+---
+
 ## The Team
-    <h3>Alba Gutierrez Pedemonte</h3>
+   
+   ### Alba Gutierrez Pedemonte
        <p>Alba has a background in Physics, worked as a consultant and is a fantastic data scientist!</p>
        <a href="https://www.linkedin.com/in/albagutierrezpedemonte/">LinkedIn</a>
        <a href="mailto: albaguti@gmail.com"><span>E-mail</span></a>
-    <h3>Louis Arts</h3>
+   
+   ### Louis Arts
        <p>Louis recently graduated with a Bachelor's in science (specialization in physics and mathematics) from Maastricht University. He plans to start a Master's in Astrophysics soon.</p>
        <a href="https://www.linkedin.com/in/louis-arts-a768221a6/">LinkedIn</a>
        <a href="mailto: artslouis@gmail.com"><span>E-mail</span></a>
-    <h3>Patrick Hofbauer</h3>
+   
+   ### Patrick Hofbauer
        <p>Patrick has a Bachelor's in economics from UCLA and a Master's in Finance from the University of Innsbruck. He plans to apply his newfound data science skills in the financial industry.</p>
        <a href="https://www.linkedin.com/in/patrick-hofbauer/">LinkedIn</a>
        <a href="mailto: patrick.hofbauer15@gmail.com"><span>E-mail</span></a>
