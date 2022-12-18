@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Explaining CNNs | AIdentify</title>
+    <link rel="icon" type="image/x-icon" href="static/img/favicon.png">
+  </head>
+  <body class="d-flex h-100 text-center text-bg-dark">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <div class="container-fluid">
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                <img src="static/img/aidentify-icon-only.png" class="bi me-2" width="35" height="35"><use xlink:href="#bootstrap"></use></img>
+                <span class="fs-4">AIdentify
+                </span>
+          </a>
+
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="/" class="nav-link px-2 link-secondary" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="/features1" class="nav-link px-2 link-secondary">Overview</a></li>
+            <li class="nav-item"><a href="/features2" class="nav-link active active-secundary px-2 link-secondary" style="border-color:#11c7c3d9 !important; background-color: #11c7c3d9 !important;">Data</a></li>
+            <li class="nav-item"><a href="/modelselection" class="nav-link px-2 link-secondary">Model</a></li>
+            <li class="nav-item"><a href="team.html" class="nav-link px-2 link-secondary">Team</a></li>
+            </ul>
+
+        </header>
+        <div class="container-fluid pb-3">
+          <div class="d-grid gap-3" style="grid-template-columns: 0.8fr 1fr;">
+            <div >
+              <div class="text-md-start"><h4>Explaining CNNs</h4>
+                <p> A <strong> convolutional neural network </strong> is a class of artificial neural network that is most commonly used in the context of artificial intelligence as a means to solve problems in image classification. </p>
+
+<p> An artificial neural network is a <strong> machine learning model </strong> that uses many layers of interconnected neurons to learn information and use this information to make future predictions. A neural network consists of many interconnected layers. Each layer hold a series of neurons. Each neuron is able to perform a certain mathematical computation on its input and is then able to output the resulting data. The structure of these neurons are such that each neuron of a certain layer is fully connected to each neuron of the adjacent layer. The neurons communicate by activating each other with an “activation function”. When one neuron activates an adjacent neuron, its computational output is sent as an input to its adjacent neuron. When such a model is trained on a dataset, it learns which connections between neurons are best at predicting a target. In the case of convolutional neural networks, the target is usually a word that describes the input image. For example, a convolutional neural network that is trained to predict food types will output the word ‘hotdog’ when passed an image of a hotdog.
+
+<p> The main structure of a convolutional neural network can be divided into three main parts. The first part is an <strong> input layer</strong>. This input layer is a layer that holds as many neurons as there are data points in the input image. As such, a model trained to predict the label of a grayscaled, 10x10 pixels image, will hold 100 neurons. The second part is a <strong> network of hidden layers</strong>. The layer architecture is completely designed by the programmer of the network and can be optimized for a given problem. The connections between layers are given “weights” (another word for importance) during training. The last part is an <strong> output layer</strong>. This layer usually holds as many neurons as there are possible labels (hotdog, pizza, sushi, etc. as in the previous example) for the input image. </p>
+
+                </div>
+
+            </div>
+            <div>
+                <div class="bg-light border rounded-3">
+                <img src="static/img/page_imgs/cnn.png" class="img-fluid" alt="Responsive image">
+                </div>
+    <nav class="navbar fixed-bottom navbar-expand-sm ">
+        <div class="container d-flex flex-wrap">
+          <ul class="nav me-auto">
+            <a href="/visualize" class='btn btn-primary align-items-left' style="border-color:#11c7c3d9 !important; background-color: #11c7c3d9 !important;">&lt;&lt;Back</a>         </ul>
+          </ul>
+          <ul class="nav">
+            <a href="/modelselection" class='btn btn-primary' style="border-color:#11c7c3d9 !important; background-color: #11c7c3d9 !important;">Continue>></a>
+          </ul>
+        </div>
+    </nav>
+  </div>
+</div>
+  </body>
+
+</html>
