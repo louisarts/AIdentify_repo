@@ -16,3 +16,5 @@ output/
 __pycache__/
 
 aidentify.egg-info/
+
+AIdentify_repo/

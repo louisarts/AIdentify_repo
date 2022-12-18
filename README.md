@@ -10,6 +10,7 @@
 * [Technologies](#technologies)
 * [Architecture](#architecture)
 * [Setup](#setup)
+* [The Team](#the-team)
 
 ---
 
@@ -107,7 +108,11 @@ Our app is deployed as a web page served using Flask. We have used Bootstrap for
   </div>
 </div>
 
-We use opencv to control the computer's webcam. We use a HaarCascade classifier to detect all the faces on each of the frames opencv is processing. Then, the face pixels are send via post query to the an FastAPI service for the chosen model. The API returns the prediction of the model as a list of probabilities. The emotion with a higher probability is then outputed on each of the frames as a label. Flask is used to outut the processed frames with the detected faces with the emotion labels as a video stream.
+The program uses opencv to get the input from th computer's webcam. On each of the frames opencv is processing, we use a HaarCascade classifier to detect all the faces. Once the faces are detected, the pixels are send via post query to the FastAPI service for the chosen model. The API service predicts uses the model that is serving to predict what is the emotion that the face is showing and returns the prediction of the model as a list of probabilities. The emotion with a higher probability is then outputed on each of the frames as a label. Flask is used to outut the processed frames with the detected faces with the emotion labels as a video stream.
+
+https://user-images.githubusercontent.com/45735538/208239343-1951fdba-d54b-4233-a447-8bae20566e62.mov
+
+
 
 
 ---
@@ -122,7 +127,7 @@ To run the code:
 
 2) On folder api run: uvicorn api_multiple_models:my_app
 
-When the model is loaded:
+When the model is loaded, on folder aidentify:
 
 3.a) If we want to show locally:
 <br>
@@ -132,3 +137,22 @@ When the model is loaded:
 <br>
 <ul>    python main.py</ul>
    Open browser on localhost:5000
+
+---
+
+## The Team
+
+### Alba Gutierrez Pedemonte
+Alba has a background in Physics, worked as a consultant and is a fantastic data scientist!</br>
+<a href="https://www.linkedin.com/in/albagutierrezpedemonte/">LinkedIn</a><br>
+<a href="mailto: albaguti@gmail.com">E-mail</a>
+
+### Louis Arts
+Louis recently graduated with a Bachelor's in science (specialization in physics and mathematics) from Maastricht University. He plans to start a Master's in Astrophysics soon.<br>
+<a href="https://www.linkedin.com/in/louis-arts-a768221a6/">LinkedIn</a></br>
+<a href="mailto: artslouis@gmail.com">E-mail</a>
+
+### Patrick Hofbauer
+Patrick has a Bachelor's in economics from UCLA and a Master's in Finance from the University of Innsbruck. He plans to apply his newfound data science skills in the financial industry.<br>
+<a href="https://www.linkedin.com/in/patrick-hofbauer/">LinkedIn</a><br>
+<a href="mailto: patrick.hofbauer15@gmail.com">E-mail</a>
