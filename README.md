@@ -139,29 +139,15 @@ When the model is loaded:
    Open browser on localhost:5000
    
 ## The Team
-
-<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/profile_pics/profile_alba.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140">
-
-              <h2 class="fw-normal">Alba Gutierrez Pedemonte</h2>
-              <p>Alba has a background in Physics, worked as a consultant and is a fantastic data scientist!</p>
-              <p><a class="btn btn-primary" style="border-color:#11c7c3d9 !important; background-color: #11c7c3d9 !important;" href="https://www.linkedin.com/in/albagutierrezpedemonte/">LinkedIn</a></p>
-              <p><a class="btn btn-light btn-outline-primary" style="border-color:#11c7c3d9 !important; color: #11c7c3d9 !important;" href="mailto: albaguti@gmail.com"><span>E-mail</span></a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/profile_pics/profile_louis.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140">
-
-              <h2 class="fw-normal">Louis Arts</h2>
-              <p>Louis recently graduated with a Bachelor's in science (specialization in physics and mathematics) from Maastricht University. He plans to start a Master's in Astrophysics soon.</p>
-              <p><a class="btn btn-primary" style="border-color:#11c7c3d9 !important; background-color: #11c7c3d9 !important;" href="https://www.linkedin.com/in/louis-arts-a768221a6/">LinkedIn</a></p>
-              <p><a class="btn btn-light btn-outline-primary" style="border-color:#11c7c3d9 !important; color: #11c7c3d9 !important;" href="mailto: artslouis@gmail.com"><span>E-mail</span></a></p>
-
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-              <img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/profile_pics/profile_patrick.jpeg" class="bd-placeholder-img rounded-circle" width="140" height="140">
-              <h2 class="fw-normal">Patrick Hofbauer</h2>
-              <p>Patrick has a Bachelor's in economics from UCLA and a Master's in Finance from the University of Innsbruck. He plans to apply his newfound data science skills in the financial industry.</p>
-              <p><a class="btn btn-primary" style="border-color:#11c7c3d9 !important; background-color: #11c7c3d9 !important;" href="https://www.linkedin.com/in/patrick-hofbauer/">LinkedIn</a></p>
-              <p><a class="btn btn-light btn-outline-primary" style="border-color:#11c7c3d9 !important; color: #11c7c3d9 !important;" href="mailto: patrick.hofbauer15@gmail.com"><span>E-mail</span></a></p>
-
-            </div><!-- /.col-lg-4 -->
-          </div>
+    <h3>Alba Gutierrez Pedemonte</h3>
+       <p>Alba has a background in Physics, worked as a consultant and is a fantastic data scientist!</p>
+       <a href="https://www.linkedin.com/in/albagutierrezpedemonte/">LinkedIn</a>
+       <a href="mailto: albaguti@gmail.com"><span>E-mail</span></a>
+    <h3>Louis Arts</h3>
+       <p>Louis recently graduated with a Bachelor's in science (specialization in physics and mathematics) from Maastricht University. He plans to start a Master's in Astrophysics soon.</p>
+       <a href="https://www.linkedin.com/in/louis-arts-a768221a6/">LinkedIn</a>
+       <a href="mailto: artslouis@gmail.com"><span>E-mail</span></a>
+    <h3>Patrick Hofbauer</h3>
+       <p>Patrick has a Bachelor's in economics from UCLA and a Master's in Finance from the University of Innsbruck. He plans to apply his newfound data science skills in the financial industry.</p>
+       <a href="https://www.linkedin.com/in/patrick-hofbauer/">LinkedIn</a>
+       <a href="mailto: patrick.hofbauer15@gmail.com"><span>E-mail</span></a>
