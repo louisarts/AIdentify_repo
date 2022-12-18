@@ -142,17 +142,17 @@ When the model is loaded:
 
 ## The Team
    
-   ### Alba Gutierrez Pedemonte
-       Alba has a background in Physics, worked as a consultant and is a fantastic data scientist!
-       <a href="https://www.linkedin.com/in/albagutierrezpedemonte/">LinkedIn</a>
-       <a href="mailto: albaguti@gmail.com"><span>E-mail</span></a>
+### Alba Gutierrez Pedemonte
+Alba has a background in Physics, worked as a consultant and is a fantastic data scientist!
+<a href="https://www.linkedin.com/in/albagutierrezpedemonte/">LinkedIn</a>
+<a href="mailto: albaguti@gmail.com">E-mail</a>
    
-   ### Louis Arts
-       Louis recently graduated with a Bachelor's in science (specialization in physics and mathematics) from Maastricht University. He plans to start a Master's in Astrophysics soon.
-       <a href="https://www.linkedin.com/in/louis-arts-a768221a6/">LinkedIn</a>
-       <a href="mailto: artslouis@gmail.com"><span>E-mail</span></a>
+### Louis Arts
+Louis recently graduated with a Bachelor's in science (specialization in physics and mathematics) from Maastricht University. He plans to start a Master's in Astrophysics soon.
+<a href="https://www.linkedin.com/in/louis-arts-a768221a6/">LinkedIn</a>
+<a href="mailto: artslouis@gmail.com">E-mail</a>
    
-   ### Patrick Hofbauer
-       Patrick has a Bachelor's in economics from UCLA and a Master's in Finance from the University of Innsbruck. He plans to apply his newfound data science skills in the financial industry.
-       <a href="https://www.linkedin.com/in/patrick-hofbauer/">LinkedIn</a>
-       <a href="mailto: patrick.hofbauer15@gmail.com"><span>E-mail</span></a>
+### Patrick Hofbauer
+Patrick has a Bachelor's in economics from UCLA and a Master's in Finance from the University of Innsbruck. He plans to apply his newfound data science skills in the financial industry.
+<a href="https://www.linkedin.com/in/patrick-hofbauer/">LinkedIn</a>
+<a href="mailto: patrick.hofbauer15@gmail.com">E-mail</a>
