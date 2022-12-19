@@ -145,17 +145,17 @@ When the model is loaded, on folder aidentify:
 ### Alba Gutierrez Pedemonte
 Alba has a background in Physics, worked as a consultant and is a fantastic data scientist!</br>
 <a href="https://www.linkedin.com/in/albagutierrezpedemonte/">LinkedIn</a><br>
-<a href="mailto: albaguti@gmail.com">E-mail</a>
+<a href="mailto: albaguti@gmail.com">E-mail</a><br>
 <a href ="https://github.com/albaguti">GitHub Profile</a>
 
 ### Louis Arts
 Louis recently graduated with a Bachelor's in science (specialization in physics and mathematics) from Maastricht University. He plans to start a Master's in Astrophysics soon.<br>
 <a href="https://www.linkedin.com/in/louis-arts-a768221a6/">LinkedIn</a></br>
-<a href="mailto: artslouis@gmail.com">E-mail</a>
+<a href="mailto: artslouis@gmail.com">E-mail</a><br>
 <a href ="https://github.com/louisarts">GitHub Profile</a>
 
 ### Patrick Hofbauer
 Patrick has a Bachelor's in economics from UCLA and a Master's in Finance from the University of Innsbruck. He plans to apply his newfound data science skills in the financial industry.<br>
 <a href="https://www.linkedin.com/in/patrick-hofbauer/">LinkedIn</a><br>
-<a href="mailto: patrick.hofbauer15@gmail.com">E-mail</a>
+<a href="mailto: patrick.hofbauer15@gmail.com">E-mail</a><br>
 <a href ="https://github.com/patrickhofbauer">GitHub Profile</a>
