@@ -17,7 +17,7 @@
 ## General info
 AIdentify is a data science project, built in less than 2 weeks, which, given a live video input, identifies faces and classifies the emotions being expressed . The project intends to demonstrate numerous facets of data science, from data preparation to model selection and training. There are numerous potential applications of our project, including measuring reactions to digital advertisements, improving eLearning, and getting feedback on digital entertainment experiences.
 
-<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/page_imgs/jim_faces.jpg" height="500px">
+<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/aidentify/static/img/page_imgs/jim_faces.jpg" height="500px">
 
 ---
 
@@ -28,7 +28,7 @@ The FER+ (Face Expression Recognition Plus) dataset is an extension/correction o
 
 The AffectNet-HQ dataset is an annotated database of facial expressions “in the wild” (which are essentially candid photos which are not staged just for the benefit of the dataset). The database was created by collecting facial images from the internet by querying three major search engines using a large number of emotion related keywords in six different languages. The version of the database available on Kaggle has been cleaned to relabel the emotional classes of certain images and utilizes an image enhancement technique to improve image quality. In total the dataset contains about 31,000 images of varying pixel sizes.
 
-<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/page_imgs/fer_emotions.png" height="200px">
+<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/aidentify/static/img/page_imgs/fer_emotions.png" height="200px">
 
 ---
 
@@ -52,7 +52,7 @@ Next, we made sure to change all images from color (RGB) to grayscale (one color
 
 Since the dataset was slightly imbalanced in favor of happy, neutral, and surprised emotions, we wanted to boost the size of other emotion classes (e.g., fear, disgust, contempt). We did this by augmenting the already existing data by mirroring and rotating the underrepresented emotion class images. This allowed us to have a more balanced dataset for training the models.
 
-<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/page_imgs/data_prep.png" height="500px">
+<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/aidentify/static/img/page_imgs/data_prep.png" height="500px">
 
 ## Training the Models
 
@@ -61,7 +61,7 @@ We have trained two different models.
 ### Custom Convolutional Neural Network
 The first model consisted on an entire Convolutional Neural Network (CNN) architecture designed by AIdentify developers. With this model we were able to predict the emotions with a 71% Accuracy.
 
-<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/page_imgs/cnn.png" height="500px">
+<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/aidentify/static/img/page_imgs/cnn.png" height="500px">
 
 ### Model constructed using a pre-trained network
 On a second approach, we have used a pre-trained a Convolutional Neural Network (Densenet169), where we have added a few extra layers.
@@ -72,7 +72,7 @@ We have trained the model in two sequences.
 
 Following this approach we have achieved a model that is able to predict the emotions with a 81% of accuracy.
 
-<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/page_imgs/transfer_learning.png" height="200px">
+<img src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/aidentify/static/img/page_imgs/transfer_learning.png" height="200px">
 
 ## Technologies
 We have developed our app in Python (version: 3.10.6), served as a Flask application.
@@ -101,10 +101,10 @@ Our app is deployed as a web page served using Flask. We have used Bootstrap for
 
 <div>
   <div>
-    <img width="49%" src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/index.png" style="margin-top: 8px; vertical-align: middle;">
-    <img width="49%" src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/project.png" style="margin-top: 8px; vertical-align: middle;">
-    <img width="49%" src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/model_select.png" style="margin-top: 8px; vertical-align: middle;">
-    <img width="49%" src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/static/img/readme_imgs/key_learnings.png" style="margin-top: 8px; vertical-align: middle;">
+    <img width="49%" src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/aidentify/static/img/readme_imgs/index.png" style="margin-top: 8px; vertical-align: middle;">
+    <img width="49%" src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/aidentify/static/img/readme_imgs/project.png" style="margin-top: 8px; vertical-align: middle;">
+    <img width="49%" src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/aidentify/static/img/readme_imgs/model_select.png" style="margin-top: 8px; vertical-align: middle;">
+    <img width="49%" src="https://raw.githubusercontent.com/louisarts/AIdentify_repo/main/aidentify/static/img/readme_imgs/key_learnings.png" style="margin-top: 8px; vertical-align: middle;">
   </div>
 </div>
 
@@ -143,16 +143,19 @@ When the model is loaded, on folder aidentify:
 ## The Team
 
 ### Alba Gutierrez Pedemonte
-Alba has a background in Physics, worked as a consultant and is a fantastic data scientist!</br>
+Alba has a background in Physics, worked as a consultant and is an entrepreneur</br>
 <a href="https://www.linkedin.com/in/albagutierrezpedemonte/">LinkedIn</a><br>
-<a href="mailto: albaguti@gmail.com">E-mail</a>
+<a href="mailto: albaguti@gmail.com">E-mail</a><br>
+<a href ="https://github.com/albaguti">GitHub Profile</a>
 
 ### Louis Arts
 Louis recently graduated with a Bachelor's in science (specialization in physics and mathematics) from Maastricht University. He plans to start a Master's in Astrophysics soon.<br>
 <a href="https://www.linkedin.com/in/louis-arts-a768221a6/">LinkedIn</a></br>
-<a href="mailto: artslouis@gmail.com">E-mail</a>
+<a href="mailto: artslouis@gmail.com">E-mail</a><br>
+<a href ="https://github.com/louisarts">GitHub Profile</a>
 
 ### Patrick Hofbauer
 Patrick has a Bachelor's in economics from UCLA and a Master's in Finance from the University of Innsbruck. He plans to apply his newfound data science skills in the financial industry.<br>
 <a href="https://www.linkedin.com/in/patrick-hofbauer/">LinkedIn</a><br>
-<a href="mailto: patrick.hofbauer15@gmail.com">E-mail</a>
+<a href="mailto: patrick.hofbauer15@gmail.com">E-mail</a><br>
+<a href ="https://github.com/patrickhofbauer">GitHub Profile</a>
